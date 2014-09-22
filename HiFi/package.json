@@ -1,0 +1,20 @@
+{
+  "name": "hifi-typescript",
+  "version": "0.0.0",
+  "description": "Typescript type declarations for HiFidelity interface scripting.",
+  "main": "_references.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremy Bell",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-typedoc": "^0.2.1",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-clean": "^0.6.0"
+  }
+}

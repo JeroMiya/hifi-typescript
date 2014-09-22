@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{E3B518B0-A4C0-4A04-87F9-66A1F03EF1C6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <TypeScriptIncludeDefaultLib>false</TypeScriptIncludeDefaultLib>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="examples\addVoxelOnMouseClickExample.ts" />
+    <TypeScriptCompile Include="examples\airGuitar.ts" />
+    <TypeScriptCompile Include="examples\animatedModelExample.ts" />
+    <Content Include="examples\animationStateExample.js" />
+    <Content Include="examples\audioBall.js" />
+    <Content Include="examples\audioDeviceExample.js" />
+    <Content Include="examples\audioReflectorTools.js" />
+    <Content Include="examples\avatarCollision.js" />
+    <Content Include="examples\avatarLocalLight.js" />
+    <Content Include="examples\bot.js" />
+    <Content Include="examples\botProceduralWayPoints.js" />
+    <Content Include="examples\bot_procedural.js" />
+    <Content Include="examples\bot_randomExpression.js" />
+    <Content Include="examples\butterflies.js" />
+    <Content Include="examples\cameraExample.js" />
+    <Content Include="examples\clap.js" />
+    <Content Include="examples\clipboardExample.js" />
+    <Content Include="examples\collidingParticles.js" />
+    <Content Include="examples\concertCamera.js" />
+    <Content Include="examples\concertCamera_kims.js" />
+    <Content Include="examples\concertCamera_kyrs.js" />
+    <Content Include="examples\ControlACs.js" />
+    <Content Include="examples\ControlledAC.js" />
+    <Content Include="examples\controllerExample.js" />
+    <Content Include="examples\count.js" />
+    <Content Include="examples\crazylegs.js" />
+    <Content Include="examples\currentAPI.js" />
+    <Content Include="examples\dancing_bot.js" />
+    <Content Include="examples\defaultScripts.js" />
+    <Content Include="examples\dialogExample.js" />
+    <Content Include="examples\drumStick.js" />
+    <Content Include="examples\editModelExample.js" />
+    <Content Include="examples\editModels.js" />
+    <Content Include="examples\editParticleExample.js" />
+    <Content Include="examples\editVoxels.js" />
+    <Content Include="examples\fallingSand.js" />
+    <Content Include="examples\fileBrowserExample.js" />
+    <Content Include="examples\findParticleExample.js" />
+    <Content Include="examples\flockingBirds.js" />
+    <Content Include="examples\fountain.js" />
+    <Content Include="examples\frisbee.js" />
+    <Content Include="examples\gameoflife.js" />
+    <Content Include="examples\globalCollisionsExample.js" />
+    <Content Include="examples\globalServicesExample.js" />
+    <Content Include="examples\gracefulControls.js" />
+    <Content Include="examples\grenadeLauncher.js" />
+    <Content Include="examples\growTrees.js" />
+    <Content Include="examples\gun.js" />
+    <Content Include="examples\headMove.js" />
+    <Content Include="examples\hideAvatarExample.js" />
+    <Content Include="examples\hydraMove.js" />
+    <Content Include="examples\includeExample.js" />
+    <Content Include="examples\inspect.js" />
+    <Content Include="examples\inWorldTestTone.js" />
+    <Content Include="examples\laserPointer.js" />
+    <Content Include="examples\leapOfFaith.js" />
+    <Content Include="examples\loadScriptFromMessage.js" />
+    <Content Include="examples\localVoxelsExample.js" />
+    <Content Include="examples\locationExample.js" />
+    <Content Include="examples\locationsMenu.js" />
+    <Content Include="examples\lookAtExample.js" />
+    <Content Include="examples\lookWithMouse.js" />
+    <Content Include="examples\lookWithTouch.js" />
+    <Content Include="examples\menuExample.js" />
+    <Content Include="examples\movingVoxel.js" />
+    <Content Include="examples\multipleCursorsExample.js" />
+    <Content Include="examples\multitouchExample.js" />
+    <Content Include="examples\myBalance.js" />
+    <Content Include="examples\overlaysExample.js" />
+    <Content Include="examples\paintGun.js" />
+    <Content Include="examples\particleBirds.js" />
+    <Content Include="examples\particleModelExample.js" />
+    <Content Include="examples\PlayRecordingOnAC.js" />
+    <Content Include="examples\playSound.js" />
+    <Content Include="examples\playSoundLoop.js" />
+    <Content Include="examples\playSoundOrbit.js" />
+    <Content Include="examples\playSoundWave.js" />
+    <Content Include="examples\proceduralAnimationAPI.js" />
+    <Content Include="examples\radio.js" />
+    <Content Include="examples\rayPickExample.js" />
+    <Content Include="examples\Recorder.js" />
+    <Content Include="examples\ribbon.js" />
+    <Content Include="examples\rideAlongWithAParticleExample.js" />
+    <Content Include="examples\rockPaperScissorsCells.js" />
+    <Content Include="examples\seeingVoxelsExample.js" />
+    <Content Include="examples\selectAudioDevice.js" />
+    <Content Include="examples\settingsExample.js" />
+    <Content Include="examples\sit.js" />
+    <Content Include="examples\spaceInvadersExample.js" />
+    <Content Include="examples\speechControl.js" />
+    <Content Include="examples\squeezeHands.js" />
+    <Content Include="examples\streetAreaExample.js" />
+    <Content Include="examples\swissArmyJetpack.js" />
+    <Content Include="examples\Test.js" />
+    <Content Include="examples\testingVoxelViewerRestart.js" />
+    <Content Include="examples\testXMLHttpRequest.js" />
+    <Content Include="examples\timer.js" />
+    <Content Include="examples\toolBars.js" />
+    <Content Include="examples\toyball.js" />
+    <Content Include="examples\twoFallingEntities.js" />
+    <Content Include="examples\typedArraysUnitTest.js" />
+    <Content Include="examples\voxelDrumming.js" />
+    <Content Include="examples\voxelsoundwaves.js" />
+    <Content Include="examples\voxelwall.js" />
+    <Content Include="examples\windowExample.js" />
+    <Content Include="Gruntfile.js" />
+    <Content Include="lib\LICENSE.txt" />
+    <Content Include="web.config" />
+    <TypeScriptCompile Include="hifi\Audio.d.ts" />
+    <TypeScriptCompile Include="hifi\Avatar.d.ts" />
+    <TypeScriptCompile Include="hifi\Camera.d.ts" />
+    <TypeScriptCompile Include="hifi\Clipboard.d.ts" />
+    <TypeScriptCompile Include="hifi\Controller.d.ts" />
+    <TypeScriptCompile Include="hifi\Entities.d.ts" />
+    <TypeScriptCompile Include="hifi\Events.d.ts" />
+    <TypeScriptCompile Include="hifi\IAbstractControllerScriptingInterface.d.ts" />
+    <TypeScriptCompile Include="hifi\IAbstractInputController.d.ts" />
+    <TypeScriptCompile Include="hifi\IColor.d.ts" />
+    <TypeScriptCompile Include="hifi\INumberTypes.d.ts" />
+    <TypeScriptCompile Include="hifi\IQuat.d.ts" />
+    <TypeScriptCompile Include="hifi\ISignal.d.ts" />
+    <TypeScriptCompile Include="hifi\IVec2.d.ts" />
+    <TypeScriptCompile Include="hifi\IVec3.d.ts" />
+    <TypeScriptCompile Include="hifi\Particles.d.ts" />
+    <TypeScriptCompile Include="hifi\Voxels.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="lib\README.md" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="hifi\Script.d.ts" />
+    <TypeScriptCompile Include="hifi\Window.d.ts" />
+    <TypeScriptCompile Include="lib\lib.d.ts" />
+    <TypeScriptCompile Include="sandbox.ts" />
+    <TypeScriptCompile Include="_references.ts" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>HiFi</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54998</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54998/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
+    <TypeScriptNoImplicitAny>True</TypeScriptNoImplicitAny>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
