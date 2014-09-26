@@ -1,0 +1,487 @@
+﻿<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>IEntityScriptingInterface | hifi</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">hifi</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-private" checked />
+							<label class="tsd-widget" for="tsd-filter-private">Private</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/hifi.html">hifi</a>
+				</li>
+				<li>
+					<a href="hifi.ientityscriptinginterface.html">IEntityScriptingInterface</a>
+				</li>
+			</ul>
+			<h1>Interface IEntityScriptingInterface</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>handles scripting of Entity commands from JS passed to assigned clients</p>
+					</div>
+					<p>checked against /libraries/entities/src/EntityScriptingInterface.{h,cpp}
+					September 18th, 2014</p>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.ientityscriptinginterface.html#addentity" class="tsd-kind-icon">add<wbr>Entity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.ientityscriptinginterface.html#deleteentity" class="tsd-kind-icon">delete<wbr>Entity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.ientityscriptinginterface.html#dumptree" class="tsd-kind-icon">dump<wbr>Tree</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.ientityscriptinginterface.html#editentity" class="tsd-kind-icon">edit<wbr>Entity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.ientityscriptinginterface.html#findclosestentity" class="tsd-kind-icon">find<wbr>Closest<wbr>Entity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.ientityscriptinginterface.html#findentities" class="tsd-kind-icon">find<wbr>Entities</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.ientityscriptinginterface.html#findrayintersection" class="tsd-kind-icon">find<wbr>Ray<wbr>Intersection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.ientityscriptinginterface.html#findrayintersectionblocking" class="tsd-kind-icon">find<wbr>Ray<wbr>Intersection<wbr>Blocking</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.ientityscriptinginterface.html#getentityproperties" class="tsd-kind-icon">get<wbr>Entity<wbr>Properties</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.ientityscriptinginterface.html#identifyentity" class="tsd-kind-icon">identify<wbr>Entity</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+				</section>            <section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="addentity" class="anchor"></a>
+					<h3>add<wbr>Entity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Entity<span class="tsd-signature-symbol">(</span>properties<span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemproperties.html" class="tsd-signature-type">IEntityItemProperties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Entities.d.ts:146</li>
+								</ul>
+								</aside>        <div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>adds a model with the specific properties</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>properties:         <a href="hifi.ientityitemproperties.html" class="tsd-signature-type">IEntityItemProperties</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns         <a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a>
+							</h4>
+						</li>
+					</ul>
+					</section>            <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="deleteentity" class="anchor"></a>
+					<h3>delete<wbr>Entity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Entity<span class="tsd-signature-symbol">(</span>entityID<span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Entities.d.ts:168</li>
+								</ul>
+								</aside>        <div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>deletes a model</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>entityID:         <a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					</section>            <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="dumptree" class="anchor"></a>
+					<h3>dump<wbr>Tree</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">dump<wbr>Tree<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Entities.d.ts:198</li>
+								</ul>
+							</aside>
+						</li>
+					</ul>
+					</section>            <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="editentity" class="anchor"></a>
+					<h3>edit<wbr>Entity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">edit<wbr>Entity<span class="tsd-signature-symbol">(</span>entityID<span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a>, properties<span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemproperties.html" class="tsd-signature-type">IEntityItemProperties</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Entities.d.ts:163</li>
+								</ul>
+								</aside>        <div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>edits a model updating only the included properties, will return the identified EntityItemID in case of
+									successful edit, if the input entityID is for an unknown model this function will have no effect</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>entityID:         <a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a></h5>
+								</li>
+								<li>
+									<h5>properties:         <a href="hifi.ientityitemproperties.html" class="tsd-signature-type">IEntityItemProperties</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns         <a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a>
+							</h4>
+						</li>
+					</ul>
+					</section>            <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="findclosestentity" class="anchor"></a>
+					<h3>find<wbr>Closest<wbr>Entity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Closest<wbr>Entity<span class="tsd-signature-symbol">(</span>center<span class="tsd-signature-symbol">: </span><a href="hifi.ivec3.html" class="tsd-signature-type">IVec3</a>, radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Entities.d.ts:176</li>
+								</ul>
+								</aside>        <div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>finds the closest model to the center point, within the radius
+										will return a EntityItemID.isKnownID = false if no models are in the radius
+									this function will not find any models in script engine contexts which don&#39;t have access to models</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>center:         <a href="hifi.ivec3.html" class="tsd-signature-type">IVec3</a></h5>
+								</li>
+								<li>
+									<h5>radius:         <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>float</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns         <a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a>
+							</h4>
+						</li>
+					</ul>
+					</section>            <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="findentities" class="anchor"></a>
+					<h3>find<wbr>Entities</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Entities<span class="tsd-signature-symbol">(</span>center<span class="tsd-signature-symbol">: </span><a href="hifi.ivec3.html" class="tsd-signature-type">IVec3</a>, radius<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Entities.d.ts:183</li>
+								</ul>
+								</aside>        <div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>finds models within the search sphere specified by the center point and radius
+									this function will not find any models in script engine contexts which don&#39;t have access to models</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>center:         <a href="hifi.ivec3.html" class="tsd-signature-type">IVec3</a></h5>
+								</li>
+								<li>
+									<h5>radius:         <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>float</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns         <a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a><span class="tsd-signature-symbol">[]</span>
+							</h4>
+						</li>
+					</ul>
+					</section>            <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="findrayintersection" class="anchor"></a>
+					<h3>find<wbr>Ray<wbr>Intersection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Ray<wbr>Intersection<span class="tsd-signature-symbol">(</span>ray<span class="tsd-signature-symbol">: </span><a href="hifi.ipickray.html" class="tsd-signature-type">IPickRay</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hifi.iraytoentityintersectionresult.html" class="tsd-signature-type">IRayToEntityIntersectionResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Entities.d.ts:190</li>
+								</ul>
+								</aside>        <div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>If the scripting context has visible voxels, this will determine a ray intersection, the results
+										may be inaccurate if the engine is unable to access the visible voxels, in which case result.accurate
+									will be false.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray:         <a href="hifi.ipickray.html" class="tsd-signature-type">IPickRay</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns         <a href="hifi.iraytoentityintersectionresult.html" class="tsd-signature-type">IRayToEntityIntersectionResult</a>
+							</h4>
+						</li>
+					</ul>
+					</section>            <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="findrayintersectionblocking" class="anchor"></a>
+					<h3>find<wbr>Ray<wbr>Intersection<wbr>Blocking</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Ray<wbr>Intersection<wbr>Blocking<span class="tsd-signature-symbol">(</span>ray<span class="tsd-signature-symbol">: </span><a href="hifi.ipickray.html" class="tsd-signature-type">IPickRay</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hifi.iraytoentityintersectionresult.html" class="tsd-signature-type">IRayToEntityIntersectionResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Entities.d.ts:196</li>
+								</ul>
+								</aside>        <div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>If the scripting context has visible voxels, this will determine a ray intersection, and will block in
+									order to return an accurate result</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ray:         <a href="hifi.ipickray.html" class="tsd-signature-type">IPickRay</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns         <a href="hifi.iraytoentityintersectionresult.html" class="tsd-signature-type">IRayToEntityIntersectionResult</a>
+							</h4>
+						</li>
+					</ul>
+					</section>            <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getentityproperties" class="anchor"></a>
+					<h3>get<wbr>Entity<wbr>Properties</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Entity<wbr>Properties<span class="tsd-signature-symbol">(</span>entityID<span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemproperties.html" class="tsd-signature-type">IEntityItemProperties</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Entities.d.ts:157</li>
+								</ul>
+								</aside>        <div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>gets the current model properties for a specific model
+									this function will not find return results in script engine contexts which don&#39;t have access to models</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>entityID:         <a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns         <a href="hifi.ientityitemproperties.html" class="tsd-signature-type">IEntityItemProperties</a>
+							</h4>
+						</li>
+					</ul>
+					</section>            <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="identifyentity" class="anchor"></a>
+					<h3>identify<wbr>Entity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">identify<wbr>Entity<span class="tsd-signature-symbol">(</span>entityID<span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Entities.d.ts:151</li>
+								</ul>
+								</aside>        <div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>identify a recently created model to determine its true ID</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>entityID:         <a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns         <a href="hifi.ientityitemid.html" class="tsd-signature-type">IEntityItemID</a>
+							</h4>
+						</li>
+					</ul>
+			</section></section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-container">
+						<a href="../modules/hifi.html">hifi</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-container">
+						<a href="hifi.ientityscriptinginterface.html" class="tsd-kind-icon">IEntity<wbr>Scripting<wbr>Interface</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.ientityscriptinginterface.html#addentity" class="tsd-kind-icon">add<wbr>Entity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.ientityscriptinginterface.html#deleteentity" class="tsd-kind-icon">delete<wbr>Entity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.ientityscriptinginterface.html#dumptree" class="tsd-kind-icon">dump<wbr>Tree</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.ientityscriptinginterface.html#editentity" class="tsd-kind-icon">edit<wbr>Entity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.ientityscriptinginterface.html#findclosestentity" class="tsd-kind-icon">find<wbr>Closest<wbr>Entity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.ientityscriptinginterface.html#findentities" class="tsd-kind-icon">find<wbr>Entities</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.ientityscriptinginterface.html#findrayintersection" class="tsd-kind-icon">find<wbr>Ray<wbr>Intersection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.ientityscriptinginterface.html#findrayintersectionblocking" class="tsd-kind-icon">find<wbr>Ray<wbr>Intersection<wbr>Blocking</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.ientityscriptinginterface.html#getentityproperties" class="tsd-kind-icon">get<wbr>Entity<wbr>Properties</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.ientityscriptinginterface.html#identifyentity" class="tsd-kind-icon">identify<wbr>Entity</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-container"><span class="tsd-kind-icon">Container, dynamic module</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-construct-signature"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-call-signature"><span class="tsd-kind-icon">Function, call signature, accessor</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-construct-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-construct-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Member, accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li>&nbsp;</li>
+				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited member</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li>&nbsp;</li>
+				<li class="tsd-kind-construct-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private member</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li>&nbsp;</li>
+				<li>&nbsp;</li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static member</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.io" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

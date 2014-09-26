@@ -21,7 +21,7 @@ var yaw = 0.0;
 var roll = 0.0;
 var rotation = Quat.fromPitchYawRollDegrees(pitch, yaw, roll)
 
-var originalProperties: IEntityItemProperties = {
+var originalProperties: hifi.IEntityItemProperties = {
     type: "Model",
     position: { x: MyAvatar.position.x,
                 y: MyAvatar.position.y,
@@ -100,7 +100,7 @@ function moveModel(deltaTime: number) {
     //print("modelID.creatorTokenID = " + modelID.creatorTokenID);
 
     if (somethingChanged) {
-        var newProperties: IEntityItemProperties = {
+        var newProperties: hifi.IEntityItemProperties = {
             animationIsPlaying: isPlaying,
             animationFPS: animationFPS,
         };

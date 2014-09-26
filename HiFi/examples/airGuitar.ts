@@ -13,17 +13,17 @@
 //
 
 module airGuitar {
-    function length(v: IVec3) {
+    function length(v: hifi.IVec3) {
         return Math.sqrt(v.x * v.x + v.y * v.y + v.z * v.z);
     }
 
 
-    function printVector(v: IVec3) {
+    function printVector(v: hifi.IVec3) {
         print(v.x + ", " + v.y + ", " + v.z);
         return;
     }
 
-    function vMinus(a: IVec3, b: IVec3) {
+    function vMinus(a: hifi.IVec3, b: hifi.IVec3) {
         var rval = { x: a.x - b.x, y: a.y - b.y, z: a.z - b.z };
         return rval;
     }
@@ -72,9 +72,9 @@ module airGuitar {
         z: 0.0
     };
 
-    var soundPlaying: IAudioInjector = null;
+    var soundPlaying: hifi.IAudioInjector = null;
     var selectorPressed = false;
-    var position: IVec3;
+    var position: hifi.IVec3;
 
     MyAvatar.attach(guitarModel, "Hips", { x: -0.0, y: -0.0, z: 0.0 }, Quat.fromPitchYawRollDegrees(0, 0, 0), 1.0);
 
@@ -134,7 +134,7 @@ module airGuitar {
         }
     }
 
-    function playChord(position: IVec3, volume: number) {
+    function playChord(position: hifi.IVec3, volume: number) {
         var options = new AudioInjectionOptions();
         options.position = position;
         options.volume = volume;
@@ -146,7 +146,7 @@ module airGuitar {
         soundPlaying = Audio.playSound(chords[guitarSelector + whichChord], options);
     }
     var keyVolume = 0.0;
-    function keyPressEvent(event: IKeyEvent) {
+    function keyPressEvent(event: hifi.IKeyEvent) {
         // check for keypresses and use those to trigger sounds if not hydra
         keyVolume = 0.4;
         if (event.text == "1") {

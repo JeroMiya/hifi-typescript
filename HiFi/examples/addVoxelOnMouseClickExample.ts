@@ -15,7 +15,7 @@
 //
 
 module addVoxelOnMouseClickExample {
-    function mousePressEvent(event: IMouseEvent) {
+    function mousePressEvent(event: hifi.IMouseEvent) {
         print("mousePressEvent event.x,y=" + event.x + ", " + event.y);
         var pickRay = Camera.computePickRay(event.x, event.y);
         var intersection = Voxels.findRayIntersection(pickRay);
