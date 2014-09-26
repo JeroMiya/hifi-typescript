@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AudioInjectionOptions | hifi</title>
+	<title>IAudioInjector | hifi</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -51,63 +51,108 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="audioinjectionoptions.html">AudioInjectionOptions</a>
+					<a href="../modules/hifi.html">hifi</a>
+				</li>
+				<li>
+					<a href="hifi.iaudioinjector.html">IAudioInjector</a>
 				</li>
 			</ul>
-			<h1>Object literal AudioInjectionOptions</h1>
+			<h1>Interface IAudioInjector</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Checked against /libraries/audio/src/AudioInjector.h
+						2014-09-12</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Construct signatures</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-construct-signature tsd-parent-kind-object-literal tsd-is-not-exported"><a href="audioinjectionoptions.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-object-literal tsd-is-not-exported"><a href="audioinjectionoptions.html#prototype" class="tsd-kind-icon">prototype</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="hifi.iaudioinjector.html#finished" class="tsd-kind-icon">finished</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.iaudioinjector.html#injectaudio" class="tsd-kind-icon">inject<wbr>Audio</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.iaudioinjector.html#setupoptions" class="tsd-kind-icon">setup<wbr>Options</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="hifi.iaudioinjector.html#stop" class="tsd-kind-icon">stop</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
-				</section>            <section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Construct signatures</h2>
-				<section class="tsd-panel tsd-member tsd-kind-construct-signature tsd-parent-kind-object-literal tsd-is-not-exported">
-					<a name="constructor" class="anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-construct-signature tsd-parent-kind-object-literal tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">constructor<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/hifi.iaudioinjectoroptions.html" class="tsd-signature-type">IAudioInjectorOptions</a></li>
+				</section>            <section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="finished" class="anchor"></a>
+					<h3>finished</h3>
+					<div class="tsd-signature tsd-kind-icon">finished<span class="tsd-signature-symbol">:</span>         <a href="hifi.isignal.html" class="tsd-signature-type">ISignal</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in hifi/Audio.d.ts:37</li>
+						</ul>
+					</aside>
+				</section></section>        <section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="injectaudio" class="anchor"></a>
+					<h3>inject<wbr>Audio</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">inject<wbr>Audio<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description"><aside class="tsd-sources">
 								<ul>
-									<li>Defined in hifi/Audio.d.ts:57</li>
+									<li>Defined in hifi/Audio.d.ts:33</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns         <a href="../interfaces/hifi.iaudioinjectoroptions.html" class="tsd-signature-type">IAudioInjectorOptions</a>
-							</h4>
 						</li>
 					</ul>
-				</section></section>        <section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-object-literal tsd-is-not-exported">
-					<a name="prototype" class="anchor"></a>
-					<h3>prototype</h3>
-					<div class="tsd-signature tsd-kind-icon">prototype<span class="tsd-signature-symbol">:</span>         <a href="../interfaces/hifi.iaudioinjectoroptions.html" class="tsd-signature-type">IAudioInjectorOptions</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in hifi/Audio.d.ts:56</li>
-						</ul>
-					</aside>
+					</section>            <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="setupoptions" class="anchor"></a>
+					<h3>setup<wbr>Options</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">setup<wbr>Options<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="hifi.iaudioinjectoroptions.html" class="tsd-signature-type">IAudioInjectorOptions</a><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Audio.d.ts:35</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options:         <a href="hifi.iaudioinjectoroptions.html" class="tsd-signature-type">IAudioInjectorOptions</a></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					</section>            <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="stop" class="anchor"></a>
+					<h3>stop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description"><aside class="tsd-sources">
+								<ul>
+									<li>Defined in hifi/Audio.d.ts:34</li>
+								</ul>
+							</aside>
+						</li>
+					</ul>
 			</section></section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -116,67 +161,34 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class="current tsd-kind-container">
+						<a href="../modules/hifi.html">hifi</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-object-literal tsd-is-not-exported">
-						<a href="audioinjectionoptions.html" class="tsd-kind-icon">Audio<wbr>Injection<wbr>Options</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-container">
+						<a href="hifi.iaudioinjector.html" class="tsd-kind-icon">IAudio<wbr>Injector</a>
 						<ul>
-							<li class=" tsd-kind-construct-signature tsd-parent-kind-object-literal tsd-is-not-exported">
-								<a href="audioinjectionoptions.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="hifi.iaudioinjector.html#finished" class="tsd-kind-icon">finished</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-object-literal tsd-is-not-exported">
-								<a href="audioinjectionoptions.html#prototype" class="tsd-kind-icon">prototype</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.iaudioinjector.html#injectaudio" class="tsd-kind-icon">inject<wbr>Audio</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.iaudioinjector.html#setupoptions" class="tsd-kind-icon">setup<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="hifi.iaudioinjector.html#stop" class="tsd-kind-icon">stop</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-object-literal tsd-is-not-exported">
-						<a href="entityitemid.html" class="tsd-kind-icon">Entity<wbr>ItemID</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-is-not-exported">
-						<a href="sound.html" class="tsd-kind-icon">Sound</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#audio" class="tsd-kind-icon">Audio</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#avatar" class="tsd-kind-icon">Avatar</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#camera" class="tsd-kind-icon">Camera</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#clipboard" class="tsd-kind-icon">Clipboard</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#controller" class="tsd-kind-icon">Controller</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#entities" class="tsd-kind-icon">Entities</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#myavatar" class="tsd-kind-icon">My<wbr>Avatar</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#particles" class="tsd-kind-icon">Particles</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#quat" class="tsd-kind-icon">Quat</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#script" class="tsd-kind-icon">Script</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#vec3" class="tsd-kind-icon">Vec3</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../globals.html#voxels" class="tsd-kind-icon">Voxels</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
