@@ -51,6 +51,34 @@ declare module hifi {
             duration: number /* float */, decay: number /* float */,
             injectorOptions?: IAudioInjectorOptions): void;
     }
+
+    /**
+     * checked against /interface/src/scripting/AudioDeviceScriptingInterface.h
+     * 2014-09-28
+     */
+    interface IAudioDeviceScriptingInterface {
+        setInputDevice(deviceName: string): boolean;
+        setOutputDevice(deviceName: string): boolean;
+
+        getInputDevice(): string;
+        getOutputDevice(): string;
+
+        getDefaultInputDevice(): string;
+        getDefaultOutputDevice(): string;
+
+        getInputDevices(): string[];
+        getOutputDevices(): string[];
+
+        /**
+         * @returns float
+         */
+        getInputVolume(): number;
+
+        /**
+         * @param volume float
+         */
+        setInputVolume(volume: number): void;
+    }
 }
 
 declare var AudioInjectionOptions: {
@@ -77,3 +105,4 @@ declare var Sound: {
 }
 
 declare var Audio: hifi.IAudioScriptingInterface;
+declare var AudioDevice: hifi.IAudioDeviceScriptingInterface;

@@ -15,22 +15,22 @@ declare module hifi {
      * September 16th, 2014
      */
     interface IParticleProperties {
-        position: IVec3;
-        color: IColor;
-        radius: number /* float */;
-        velocity: IVec3;
-        gravity: IVec3;
-        damping: number /* float */;
-        lifetime: number /* float */;
-        script: string;
-        inHand: boolean;
-        shouldDie: boolean;
-        modelURL: string;
-        modelScale: number /* float */;
-        modelTranslation: IVec3;
-        modelRotation: IQuat;
-        id: IUInt32;
-        isKnownID: boolean;
+        position?: IVec3;
+        color?: IColor;
+        radius?: number /* float */;
+        velocity?: IVec3;
+        gravity?: IVec3;
+        damping?: number /* float */;
+        lifetime?: number /* float */;
+        script?: string;
+        inHand?: boolean;
+        shouldDie?: boolean;
+        modelURL?: string;
+        modelScale?: number /* float */;
+        modelTranslation?: IVec3;
+        modelRotation?: IQuat;
+        id?: IUInt32;
+        isKnownID?: boolean;
     }
 
     /**

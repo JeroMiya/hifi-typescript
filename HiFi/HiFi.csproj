@@ -22,9 +22,9 @@
     <TypeScriptCompile Include="examples\addVoxelOnMouseClickExample.ts" />
     <TypeScriptCompile Include="examples\airGuitar.ts" />
     <TypeScriptCompile Include="examples\animatedModelExample.ts" />
-    <Content Include="examples\animationStateExample.js" />
-    <Content Include="examples\audioBall.js" />
-    <Content Include="examples\audioDeviceExample.js" />
+    <TypeScriptCompile Include="examples\animationStateExample.ts" />
+    <TypeScriptCompile Include="examples\audioBall.ts" />
+    <TypeScriptCompile Include="examples\audioDeviceExample.ts" />
     <Content Include="examples\audioReflectorTools.js" />
     <Content Include="examples\avatarCollision.js" />
     <Content Include="examples\avatarLocalLight.js" />
