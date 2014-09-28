@@ -4,8 +4,8 @@
 
 declare module hifi {
     /**
-     * Checked against /libraries/animation/src/AnimationCache.h
-     * 2014-09-13
+     * Checked against /libraries/animation/src/AnimationCache.{h,cpp}
+     * 2014-09-28
      */
     interface IAnimationDetails {
         role: string;
@@ -23,7 +23,7 @@ declare module hifi {
 
     /**
      * Checked against /libraries/avatars/src/AvatarData.h
-     * September 17th, 2014
+     * September 28th, 2014
      */
     interface IAttachmentData {
         modelURL: string;
@@ -57,7 +57,7 @@ declare module hifi {
 
     /**
      * Checked against /libraries/avatars/src/AvatarData.h
-     * September 17th, 2014
+     * September 28th, 2014
      */
     interface IAvatarData {
         position: IVec3;
@@ -202,6 +202,7 @@ declare module hifi {
         hasReferential(): boolean;
 
         isPlaying(): boolean;
+        isPaused(): boolean;
 
         /**
          * @returns qint64
@@ -212,17 +213,36 @@ declare module hifi {
          * @returns qint64
          */
         playerLength(): number;
+
+        /**
+         * @returns int
+         */
+        playerCurrentFrame(): number;
+        
+        /**
+         * @returns int
+         */
+        playerFrameNumber(): number;
+
         loadRecording(filename: string): void;
         startPlaying(): void;
+        /** @param frame {int} */
+        setPlayerFrame(frame: number): void;
+        /** @param time {qint64} */
+        setPlayerTime(time: number): void;
         setPlayFromCurrentLocation(playFromCurrentLocation: boolean): void;
         setPlayerLoop(loop: boolean): void;
+        setPlayerUseDisplayName(useDisplayName: boolean): void;
+        setPlayerUseAttachments(useAttachments: boolean): void;
+        setPlayerUseHeadModel(useHeadModel: boolean): void;
         play(): void;
+        pausePlayer(): void;
         stopPlaying(): void;
     }
 
     /**
      * /interface/src/avatar/Avatar.h
-     * September 16th, 2014
+     * September 28th, 2014
      */
     interface IAvatar extends IAvatarData {
         collisionGroups: IUInt32;
@@ -230,22 +250,36 @@ declare module hifi {
         getJointPosition(name: string): IVec3;
         getJointCombinedRotation(index: number): IQuat;
         getJointCombinedRotation(name: string): IQuat;
+
+        /**
+         * @param index int
+         */
+        setJointModelPositionAndOrientation(
+            index: number, position: IVec3, rotation: IQuat): void;
+        setJointModelPositionAndOrientation(
+            name: string, position: IVec3, rotation: IQuat): void;
+
         getVelocity(): IVec3;
         getAcceleration(): IVec3;
         getAngularVelocity(): IVec3;
         getAngularAcceleration(): IVec3;
+
         updateCollisionGroups(): void;
         collisionWithAvatar: ISignal<(myUUID: IQUuid, theirUUID: IQUuid, collision: ICollisionInfo) => void>;
     }
 
     /**
      * Checked against /interface/src/avatar/MyAvatar.h
-     * 2014-09-13
+     * 2014-09-28
      */
     interface IMyAvatar extends IAvatar {
         shouldRenderLocally: boolean;
-        /** quint32 */
-        motionBehaviors: number;
+        motorVelocity: IVec3;
+        /** float */
+        motorTimescale: number;
+        motorReferenceFrame: string;
+        ///** quint32 */
+        //motionBehaviors: number;
         gravity: IVec3;
 
         /**
@@ -316,7 +350,8 @@ declare module hifi {
 
         setVelocity(velocity: IVec3): void;
 
-        updateMotionBehaviorsFromMenu(): void;
+        updateMotionBehavior(): void;
+        onToggleRagdoll(): void;
 
         getLeftPalmPosition(): IVec3;
         getRightPalmPosition(): IVec3;
