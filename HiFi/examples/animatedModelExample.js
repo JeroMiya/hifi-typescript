@@ -1,4 +1,4 @@
-//
+﻿//
 //  animatedModelExample.js
 //  examples
 //
@@ -121,9 +121,8 @@ var animatedModelExample;
     Script.scriptEnding.connect(function () {
         print("cleaning up...");
         print("modelID=" + modelID.creatorTokenID + ", id:" + modelID.id);
-        // Couldn't find a Models global defined in the C++ anywhere,
-        // nor a deleteModel method of any kind. This may have been removed.
-        //Models.deleteModel(modelID);
+
+        Entities.deleteEntity(modelID);
     });
 })(animatedModelExample || (animatedModelExample = {}));
 //# sourceMappingURL=animatedModelExample.js.map

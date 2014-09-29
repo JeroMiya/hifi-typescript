@@ -26,7 +26,7 @@
     <TypeScriptCompile Include="examples\audioBall.ts" />
     <TypeScriptCompile Include="examples\audioDeviceExample.ts" />
     <TypeScriptCompile Include="examples\audioReflectorTools.ts" />
-    <Content Include="examples\avatarCollision.js" />
+    <TypeScriptCompile Include="examples\avatarCollision.ts" />
     <Content Include="examples\avatarLocalLight.js" />
     <Content Include="examples\bot.js" />
     <Content Include="examples\botProceduralWayPoints.js" />
