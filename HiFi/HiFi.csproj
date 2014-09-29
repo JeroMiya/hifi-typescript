@@ -144,6 +144,7 @@
     <TypeScriptCompile Include="hifi\IVec3.d.ts" />
     <TypeScriptCompile Include="hifi\Overlays.d.ts" />
     <TypeScriptCompile Include="hifi\Particles.d.ts" />
+    <TypeScriptCompile Include="hifi\UUid.d.ts" />
     <TypeScriptCompile Include="hifi\Voxels.d.ts" />
   </ItemGroup>
   <ItemGroup>

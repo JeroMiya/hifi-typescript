@@ -1,4 +1,4 @@
-﻿//
+//
 //  audioReflectorTools.js
 //  hifi
 //

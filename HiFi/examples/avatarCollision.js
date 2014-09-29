@@ -10,11 +10,11 @@
 //  Distributed under the Apache License, Version 2.0.
 //  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
 //
-
 /// <reference path="../_references.ts" />
-module avatarCollisions {
-    var SOUND_TRIGGER_CLEAR = 1000; // milliseconds
-    var SOUND_TRIGGER_DELAY = 200; // milliseconds
+var avatarCollisions;
+(function (avatarCollisions) {
+    var SOUND_TRIGGER_CLEAR = 1000;
+    var SOUND_TRIGGER_DELAY = 200;
     var soundExpiry = 0;
     var DateObj = new Date();
     var audioOptions = new AudioInjectionOptions();
@@ -45,7 +45,7 @@ module avatarCollisions {
     hitSounds[20] = new Sound("http://highfidelity-public.s3-us-west-1.amazonaws.com/sounds/Collisions-hitsandslaps/Hit21.raw");
     hitSounds[21] = new Sound("http://highfidelity-public.s3-us-west-1.amazonaws.com/sounds/Collisions-hitsandslaps/Hit22.raw");
 
-    function playHitSound(mySessionID: hifi.IQUuid, theirSessionID: hifi.IQUuid, collision: hifi.ICollisionInfo) {
+    function playHitSound(mySessionID, theirSessionID, collision) {
         var now = new Date();
         var msec = now.getTime();
         if (msec > soundExpiry) {
@@ -68,4 +68,5 @@ module avatarCollisions {
         }
     }
     MyAvatar.collisionWithAvatar.connect(playHitSound);
-}
+})(avatarCollisions || (avatarCollisions = {}));
+//# sourceMappingURL=avatarCollision.js.map

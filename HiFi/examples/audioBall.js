@@ -12,19 +12,18 @@
 //  Distributed under the Apache License, Version 2.0.
 //  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
 //
-
 /// <reference path="../_references.ts" />
-
-module audioBall {
+var audioBall;
+(function (audioBall) {
     var sound = new Sound("https://s3-us-west-1.amazonaws.com/highfidelity-public/sounds/Animals/mexicanWhipoorwill.raw");
     var CHANCE_OF_PLAYING_SOUND = 0.01;
 
     var FACTOR = 0.75;
 
-    var countParticles = 0;    // the first time around we want to create the particle and thereafter to modify it.
-    var particleID: hifi.IParticleID;
+    var countParticles = 0;
+    var particleID;
 
-    function updateParticle(deltaTime: number) {
+    function updateParticle(deltaTime) {
         // the particle should be placed in front of the user's avatar
         var avatarFront = Quat.getFront(MyAvatar.orientation);
 
@@ -40,27 +39,26 @@ module audioBall {
         }
 
         var audioAverageLoudness = MyAvatar.audioAverageLoudness * FACTOR;
-        //print ("Audio Loudness = " + MyAvatar.audioLoudness + " -- Audio Average Loudness = " + MyAvatar.audioAverageLoudness);
 
+        //print ("Audio Loudness = " + MyAvatar.audioLoudness + " -- Audio Average Loudness = " + MyAvatar.audioAverageLoudness);
         if (countParticles < 1) {
             var particleProperies = {
-                position: particlePosition // the particle should stay in front of the user's avatar as he moves
-                , color: { red: 0, green: 255, blue: 0 }
-                , radius: audioAverageLoudness
-                , velocity: { x: 0.0, y: 0.0, z: 0.0 }
-                , gravity: { x: 0.0, y: 0.0, z: 0.0 }
-                , damping: 0.0
-            }
+                position: particlePosition,
+                color: { red: 0, green: 255, blue: 0 },
+                radius: audioAverageLoudness,
+                velocity: { x: 0.0, y: 0.0, z: 0.0 },
+                gravity: { x: 0.0, y: 0.0, z: 0.0 },
+                damping: 0.0
+            };
 
-        particleID = Particles.addParticle(particleProperies);
+            particleID = Particles.addParticle(particleProperies);
             countParticles++;
-        }
-        else {
+        } else {
             // animates the particles radius and color in response to the changing audio intensity
             var newProperties = {
-                position: particlePosition // the particle should stay in front of the user's avatar as he moves
-                , color: { red: 0, green: 255 * audioAverageLoudness, blue: 0 }
-                , radius: audioAverageLoudness
+                position: particlePosition,
+                color: { red: 0, green: 255 * audioAverageLoudness, blue: 0 },
+                radius: audioAverageLoudness
             };
 
             Particles.editParticle(particleID, newProperties);
@@ -71,5 +69,7 @@ module audioBall {
     Script.update.connect(updateParticle);
 
     // register our scriptEnding callback
-    Script.scriptEnding.connect(function scriptEnding() { });
-}
+    Script.scriptEnding.connect(function scriptEnding() {
+    });
+})(audioBall || (audioBall = {}));
+//# sourceMappingURL=audioBall.js.map

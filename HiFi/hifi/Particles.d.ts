@@ -39,10 +39,22 @@ declare module hifi {
      * does not necessarily know about BodyB.  Hence the data storred in the CollisionInfo
      * is expected to be relative to BodyA (for example the penetration points from A into B).
      * /libraries/shared/src/CollisionInfo.h
-     * But I'm not sure how this is getting mapped to the JS API
+     * mapping to JS is done in /libraries/shared/src/RegisteredMetaTypes.cpp
+     * see collisionToScriptValue
+     * Checked 2014-09-28
      */
     interface ICollisionInfo {
-        // TODO: add mappings
+        /**
+         * // depth that BodyA penetrates into BodyB
+         */
+        penetration: IVec3;
+
+        /**
+         * world-frame point on BodyA that is deepest into BodyB
+         */
+        contactPoint: IVec3;
+
+        // Why not addedVelocity, damping, elasticity, shapeA or shapeB?
     }
 
 

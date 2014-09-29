@@ -11,13 +11,12 @@
 //  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
 //
 //
-
 /// <reference path="../_references.ts" />
-
-module animationStateExample {
+var animationStateExample;
+(function (animationStateExample) {
     var count = 0;
 
-    function displayAnimationDetails(deltaTime: number) {
+    function displayAnimationDetails(deltaTime) {
         print("count =" + count + " deltaTime=" + deltaTime);
         count++;
         var animationDetails = MyAvatar.getAnimationDetailsByRole("idle");
@@ -33,4 +32,5 @@ module animationStateExample {
 
     // register our scriptEnding callback
     Script.scriptEnding.connect(scriptEnding);
-}
+})(animationStateExample || (animationStateExample = {}));
+//# sourceMappingURL=animationStateExample.js.map
