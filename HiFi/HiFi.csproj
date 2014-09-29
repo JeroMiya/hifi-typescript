@@ -25,7 +25,7 @@
     <TypeScriptCompile Include="examples\animationStateExample.ts" />
     <TypeScriptCompile Include="examples\audioBall.ts" />
     <TypeScriptCompile Include="examples\audioDeviceExample.ts" />
-    <Content Include="examples\audioReflectorTools.js" />
+    <TypeScriptCompile Include="examples\audioReflectorTools.ts" />
     <Content Include="examples\avatarCollision.js" />
     <Content Include="examples\avatarLocalLight.js" />
     <Content Include="examples\bot.js" />
@@ -142,6 +142,7 @@
     <TypeScriptCompile Include="hifi\ISignal.d.ts" />
     <TypeScriptCompile Include="hifi\IVec2.d.ts" />
     <TypeScriptCompile Include="hifi\IVec3.d.ts" />
+    <TypeScriptCompile Include="hifi\Overlays.d.ts" />
     <TypeScriptCompile Include="hifi\Particles.d.ts" />
     <TypeScriptCompile Include="hifi\Voxels.d.ts" />
   </ItemGroup>
